@@ -1,0 +1,26 @@
+
+ Parallax Scrolling II - Various Features
+ ----------------------------------------
+
+	This SDL example program
+	demonstrates multilayer,
+	multidirectional parallax
+	scrolling with multiple,
+	independent maps and
+	various other features.
+
+
+The program scrolls three parallax layers around
+the screen, each with it's own map. The code is
+somewhat object oriented, but quite simple -
+there are no tricky optimizations or clever tricks.
+
+
+The program supports a few command line options:
+
+	-f	Fullscreen
+	-d	Double buffer
+	-<n>	Depth = <n> bits
+
+
+	//David Olofson  <david@olofson.net>

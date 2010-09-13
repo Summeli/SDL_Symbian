@@ -1,0 +1,40 @@
+// libpng makefile for symbian
+//
+// Copyright (c) 2009 by iwanj@users.sourceforge.net
+//
+
+target      libpng.lib
+targettype	LIB
+
+systeminclude	/epoc32/include
+systeminclude	/epoc32/include/stdapis
+userinclude		../..
+sourcepath		../..
+
+source		png.c
+source		pngerror.c
+source		pnggccrd.c
+source		pngget.c
+source		pngmem.c
+source		pngpread.c
+source		pngread.c
+source		pngrio.c
+source		pngrtran.c
+source		pngrutil.c
+source		pngset.c
+source		pngtrans.c
+source		pngvcrd.c
+source		pngwio.c
+source		pngwrite.c
+source		pngwtran.c
+source		pngwutil.c
+
+/*
+library		libc.lib
+library		libz.lib
+library   	libm.lib
+*/
+
+#ifdef GCCE
+//staticlibrary	gcce-missing.lib
+#endif

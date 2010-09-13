@@ -1,0 +1,40 @@
+TARGET SDLDEMO.exe
+#include "..\SDLLauncher.hrh"
+TARGETPATH \system\apps\SDLAPPLauncher
+TARGETTYPE exe
+sourcepath .
+source parallax2.c
+source SDLAppLauncher.cpp
+systeminclude \epoc32\include \epoc32\include\libc \epoc32\include\esdl
+LIBRARY cone.lib  eikcore.lib 
+LIBRARY euser.lib apparc.lib fbscli.lib  
+LIBRARY estlib.lib 
+LIBRARY gdi.lib hal.lib bitgdi.lib apgrfx.lib 
+LIBRARY mediaclientaudiostream.lib efsrv.lib ws32.lib
+library  bafl.lib
+// FOR S60
+library avkon.lib
+
+STATICLIBRARY esdl.lib
+// Change MACRO depending on target S60,S60V3,UIQ3 or UIQ2
+MACRO S60V3
+UID				0x100039ce KSDLAppLauncherUid
+sourcepath ..
+START RESOURCE  SDLDEMO_reg.rss
+TARGETPATH              \private\10003a3f\apps
+END
+
+START RESOURCE  SDLDemo_loc.rss
+TARGETPATH              \Resource\Apps
+LANG                    SC
+END
+
+START RESOURCE  SDLDEMO.rss
+HEADER
+TARGETPATH              \Resource\Apps
+LANG                    SC
+END
+
+EPOCSTACKSIZE 0x00008000
+
+CAPABILITY LocalServices ReadUserData

@@ -1,0 +1,41 @@
+// SDLAppLauncher.RSS
+
+NAME SDLD
+
+// Include definitions of resource STRUCTS used by this
+// resource script 
+#include <eikon.rh>
+// Include the standard Eikon resource ids 
+#include <uikon.rh>
+#include <eikon.rsg>
+
+
+RESOURCE RSS_SIGNATURE
+	{
+	}
+
+RESOURCE TBUF16 { buf=""; }
+
+RESOURCE EIK_APP_INFO
+	{
+		menubar = r_sdl_app_menubar;
+	}
+
+RESOURCE MENU_BAR r_sdl_app_menubar                           
+{
+      titles =
+    {
+		MENU_TITLE { menu_pane = r_sdl_app_menu; txt = "SDL"; }
+	};
+}
+
+RESOURCE MENU_PANE r_sdl_app_menu                                 
+{
+	items =
+	{
+	
+		MENU_ITEM{command = EEikCmdExit;txt = "Exit";}
+    };
+}
+
+#include <sdl.ra>

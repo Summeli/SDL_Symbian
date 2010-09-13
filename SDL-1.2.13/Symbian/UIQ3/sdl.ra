@@ -1,0 +1,49 @@
+#include <Qikon.rh>
+#include <qikcommand.rh>
+
+RESOURCE QIK_VIEW_CONFIGURATIONS r_sdl_view_ui_configurations
+	{
+	configurations = 
+		{
+		QIK_VIEW_CONFIGURATION
+			{
+			ui_config_mode = KQikPenStyleTouchPortrait;
+			command_list = r_sdl_view_ui_backcmd;
+			},
+		QIK_VIEW_CONFIGURATION
+			{
+			ui_config_mode = KQikPenStyleTouchLandscape;
+			command_list = r_sdl_view_ui_backcmd;
+			},
+		QIK_VIEW_CONFIGURATION
+			{
+			ui_config_mode = KQikSoftkeyStyleSmallPortrait;
+			command_list = r_sdl_view_ui_backcmd;
+			},
+		QIK_VIEW_CONFIGURATION
+			{
+			ui_config_mode = KQikSoftkeyStyleTouchPortrait;
+			command_list = r_sdl_view_ui_backcmd;
+			},
+		QIK_VIEW_CONFIGURATION
+			{
+			ui_config_mode = KQikSoftkeyStylePortrait;
+			command_list = r_sdl_view_ui_backcmd;
+			}
+		};
+	}
+
+RESOURCE QIK_COMMAND_LIST r_sdl_view_ui_backcmd
+{
+	items = 
+		{
+		QIK_COMMAND
+		{
+		id = EQikCmdGoBack;
+		text = "back";
+		shortText = "back";
+		type = EQikCommandTypeCancel;
+		cpfFlags = EQikCpfFlagHardwarekeyOnly;
+		}
+		};
+}

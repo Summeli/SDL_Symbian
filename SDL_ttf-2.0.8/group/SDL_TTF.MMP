@@ -1,0 +1,70 @@
+target		sdl_ttf.lib
+
+targettype	LIB
+
+sourcepath	..
+source 		sdl_ttf.c
+
+SOURCEPATH	..\freetype-2.1.10
+
+//base
+source \src\base\ftsystem.c
+source \src\base\ftinit.c
+source \src\base\ftutil.c
+source \src\base\ftstream.c
+source \src\base\ftcalc.c
+source \src\base\ftbitmap.c
+source \src\base\fttrigon.c
+source \src\base\ftoutln.c
+source \src\base\ftgloadr.c
+source \src\base\ftotval.c
+source \src\base\ftobjs.c
+source \src\base\ftnames.c
+//source \src\base\ftglyph.c
+source \src\base\ftbbox.c
+source \src\base\ftrfork.c
+source \src\base\ftstroke.c
+source \src\base\ftmm.c
+
+//truetype
+source \src\truetype\ttdriver.c
+source \src\truetype\ttpload.c
+source \src\truetype\ttgload.c
+source \src\truetype\ttobjs.c
+source \src\truetype\ttinterp.c
+source \src\truetype\ttgxvar.c
+//cff (for postscript-flavour OpenType fonts)
+/*source \src\cff\cffcmap.c
+source \src\cff\cffdrivr.c
+source \src\cff\cffgload.c
+source \src\cff\cffload.c
+source \src\cff\cffobjs.c
+source \src\cff\cffparse.c
+//pshinter (for hinting and scaling cff fonts)
+source \src\pshinter\pshalgo.c
+source \src\pshinter\pshglob.c
+source \src\pshinter\pshinter.c
+source \src\pshinter\pshmod.c*/
+
+//smooth
+source \src\smooth\ftgrays.c
+source \src\smooth\ftsmooth.c
+//sfnt
+source \src\sfnt\ttload.c
+source \src\sfnt\ttcmap.c
+source \src\sfnt\sfobjs.c
+source \src\sfnt\sfdriver.c
+source \src\sfnt\ttsbit.c
+source \src\sfnt\ttkern.c
+
+source \src\sfnt\ttpost.c
+//raster
+source \src\raster\ftraster.c
+source \src\raster\ftrend1.c
+
+systeminclude ..\freetype-2.1.10\include ..\freetype-2.1.10\src \epoc32\include\esdl
+systeminclude \epoc32\include \epoc32\include\libc
+systeminclude ..\freetype-2.1.10\include\freetype  ..\freetype-2.1.10\src\pshinter
+userinclude ..
+
+

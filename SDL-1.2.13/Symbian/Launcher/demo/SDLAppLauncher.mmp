@@ -1,0 +1,21 @@
+TARGET SDLAPPLauncher.exe
+TARGETPATH \system\apps\SDLAPPLauncher
+TARGETTYPE EXEDLL
+sourcepath .
+source parallax2.c
+source SDLAppLauncher.cpp
+systeminclude \epoc32\include \epoc32\include\libc \epoc32\include\esdl
+LIBRARY cone.lib  eikcore.lib 
+LIBRARY euser.lib apparc.lib fbscli.lib  
+LIBRARY estlib.lib 
+LIBRARY gdi.lib hal.lib bitgdi.lib
+LIBRARY mediaclientaudiostream.lib efsrv.lib ws32.lib
+library  bafl.lib
+// FOR S60
+//library avkon.lib
+// UIQ2
+//library qikctl.lib
+STATICLIBRARY esdl.lib
+// Change MACRO depending on target S60,S60V3,UIQ3 or UIQ2
+//MACRO S60
+MACRO S90

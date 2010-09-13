@@ -1,0 +1,14 @@
+// libpng makefile for symbian
+//
+// Copyright (c) 2009 by iwanj@users.sourceforge.net
+//
+
+prj_platforms
+winscw gcce armv5
+
+prj_mmpfiles
+libpng.mmp
+
+prj_exports
+../../png.h       /epoc32/include/png/png.h
+../../pngconf.h   /epoc32/include/png/pngconf.h

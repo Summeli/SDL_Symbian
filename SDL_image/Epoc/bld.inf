@@ -1,0 +1,13 @@
+PRJ_PLATFORMS
+
+WINSCW GCCE
+
+PRJ_EXPORTS
+..\SDL_image.h				esdl\SDL_image.h
+
+PRJ_MMPFILES
+
+SDL_image.mmp
+
+
+

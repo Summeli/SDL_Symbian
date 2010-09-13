@@ -1,0 +1,4 @@
+#include "../libpng/projects/symbian/bld.inf"
+#include "../SDL_image/Epoc/bld.inf"
+#include "../SDL_ttf-2.0.8/group/bld.inf"
+#include "../SDL-1.2.13/Symbian/s60v3/bld.inf"

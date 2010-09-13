@@ -1,0 +1,26 @@
+
+
+
+; List of localised vendor names - one per language. At least one must be provided (English [EN]).
+; List must correspond to list of languages specified elsewhere in the .pkg
+%{"SDLDemo"}
+; The non-localised, globally unique vendor name (mandatory)
+:"SDLDemo"
+
+; UID is the app's UID
+#{"SDLDemo UIQ3"},(0x0F1f9b58),0,1,0
+
+; ProductID for UIQ 3.0
+; Product/platform version UID, Major, Minor, Build, Product ID
+(0x101F6300), 3, 0, 0, {"UIQ30ProductID"}
+
+
+; Application, AIF & Resource file
+"\epoc32\release\gcce\urel\SDLDemo.exe"-	"!:\sys\bin\SDLDemo.exe"
+"\epoc32\data\z\resource\apps\SDLDemo.rsc"-	"!:\resource\apps\SDLDemo.rsc"
+"\epoc32\Data\Z\resource\apps\SDLDemo_loc.rsc"-	"!:\resource\apps\SDLDemo_loc.rsc"
+"\epoc32\data\z\private\10003a3f\apps\SDLDemo_reg.rsc"-"!:\private\10003a3f\import\apps\SDLDemo_reg.rsc"
+"tiles.bmp"-	"c:\shared\tiles.bmp"
+
+; Config/log files: 'empty' will automagically be removed on uninstall
+""-"c:\shared\sdldemo\sdl.ini",FILENULL

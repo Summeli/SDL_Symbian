@@ -1,0 +1,38 @@
+;
+; Basic install file for QExBluetooth on Arm4
+;
+
+; Languages
+; none -  English only by default
+
+; Installation header
+; Only one component name as we only support English
+; UID is the app's UID
+#{"TestAlpha"},(0x101F6165),0,1,1,TYPE=SA
+(0x101F617B), 2, 0, 0, {"UIQ20ProductID"}
+
+;Signature
+;*"mykey.key","mycert.cer"
+
+; Application file
+IF CPUABI=2 ; Thumb
+"\Symbian\UIQ_70\epoc32\release\armi\urel\testalpha.exe"-"!:\system\apps\testalpha\testalpha.exe"
+;"\Symbian\UIQ_70\epoc32\data\z\system\apps\testalpha\testalpha.RSC"-"!:\system\apps\testalpha\testalpha.rsc"
+
+ELSE
+;"nosupport.txt"-"", FILETEXT, TEXTCONTINUE
+ENDIF
+
+
+; DLLS
+; AIF application information file
+
+
+; MBM files
+; Settings help txts
+; MepModem ini files
+; Required files
+; None
+
+; Component .sis files
+; None

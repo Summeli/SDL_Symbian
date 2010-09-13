@@ -1,0 +1,236 @@
+EXPORTS
+	png_IDAT @ 1 NONAME DATA 5
+	png_IEND @ 2 NONAME DATA 5
+	png_IHDR @ 3 NONAME DATA 5
+	png_PLTE @ 4 NONAME DATA 5
+	png_access_version_number @ 5 NONAME
+	png_bKGD @ 6 NONAME DATA 5
+	png_build_grayscale_palette @ 7 NONAME
+	png_cHRM @ 8 NONAME DATA 5
+	png_check_sig @ 9 NONAME
+	png_chunk_error @ 10 NONAME
+	png_chunk_warning @ 11 NONAME
+	png_convert_from_struct_tm @ 12 NONAME
+	png_convert_from_time_t @ 13 NONAME
+	png_convert_to_rfc1123 @ 14 NONAME
+	png_create_info_struct @ 15 NONAME
+	png_create_read_struct @ 16 NONAME
+	png_create_read_struct_2 @ 17 NONAME
+	png_create_write_struct @ 18 NONAME
+	png_create_write_struct_2 @ 19 NONAME
+	png_data_freer @ 20 NONAME
+	png_destroy_info_struct @ 21 NONAME
+	png_destroy_read_struct @ 22 NONAME
+	png_destroy_write_struct @ 23 NONAME
+	png_error @ 24 NONAME
+	png_free @ 25 NONAME
+	png_free_data @ 26 NONAME
+	png_free_default @ 27 NONAME
+	png_gAMA @ 28 NONAME DATA 5
+	png_get_IHDR @ 29 NONAME
+	png_get_PLTE @ 30 NONAME
+	png_get_asm_flagmask @ 31 NONAME
+	png_get_asm_flags @ 32 NONAME
+	png_get_bKGD @ 33 NONAME
+	png_get_bit_depth @ 34 NONAME
+	png_get_cHRM @ 35 NONAME
+	png_get_cHRM_fixed @ 36 NONAME
+	png_get_channels @ 37 NONAME
+	png_get_color_type @ 38 NONAME
+	png_get_compression_buffer_size @ 39 NONAME
+	png_get_compression_type @ 40 NONAME
+	png_get_copyright @ 41 NONAME
+	png_get_error_ptr @ 42 NONAME
+	png_get_filter_type @ 43 NONAME
+	png_get_gAMA @ 44 NONAME
+	png_get_gAMA_fixed @ 45 NONAME
+	png_get_hIST @ 46 NONAME
+	png_get_header_ver @ 47 NONAME
+	png_get_header_version @ 48 NONAME
+	png_get_iCCP @ 49 NONAME
+	png_get_image_height @ 50 NONAME
+	png_get_image_width @ 51 NONAME
+	png_get_int_32 @ 52 NONAME
+	png_get_interlace_type @ 53 NONAME
+	png_get_io_ptr @ 54 NONAME
+	png_get_libpng_ver @ 55 NONAME
+	png_get_mem_ptr @ 56 NONAME
+	png_get_mmx_bitdepth_threshold @ 57 NONAME
+	png_get_mmx_flagmask @ 58 NONAME
+	png_get_mmx_rowbytes_threshold @ 59 NONAME
+	png_get_oFFs @ 60 NONAME
+	png_get_pCAL @ 61 NONAME
+	png_get_pHYs @ 62 NONAME
+	png_get_pixel_aspect_ratio @ 63 NONAME
+	png_get_pixels_per_meter @ 64 NONAME
+	png_get_progressive_ptr @ 65 NONAME
+	png_get_rgb_to_gray_status @ 66 NONAME
+	png_get_rowbytes @ 67 NONAME
+	png_get_rows @ 68 NONAME
+	png_get_sBIT @ 69 NONAME
+	png_get_sCAL @ 70 NONAME
+	png_get_sPLT @ 71 NONAME
+	png_get_sRGB @ 72 NONAME
+	png_get_signature @ 73 NONAME
+	png_get_tIME @ 74 NONAME
+	png_get_tRNS @ 75 NONAME
+	png_get_text @ 76 NONAME
+	png_get_uint_16 @ 77 NONAME
+	png_get_uint_31 @ 78 NONAME
+	png_get_uint_32 @ 79 NONAME
+	png_get_unknown_chunks @ 80 NONAME
+	png_get_user_chunk_ptr @ 81 NONAME
+	png_get_user_height_max @ 82 NONAME
+	png_get_user_transform_ptr @ 83 NONAME
+	png_get_user_width_max @ 84 NONAME
+	png_get_valid @ 85 NONAME
+	png_get_x_offset_microns @ 86 NONAME
+	png_get_x_offset_pixels @ 87 NONAME
+	png_get_x_pixels_per_meter @ 88 NONAME
+	png_get_y_offset_microns @ 89 NONAME
+	png_get_y_offset_pixels @ 90 NONAME
+	png_get_y_pixels_per_meter @ 91 NONAME
+	png_hIST @ 92 NONAME DATA 5
+	png_handle_as_unknown @ 93 NONAME
+	png_iCCP @ 94 NONAME DATA 5
+	png_iTXt @ 95 NONAME DATA 5
+	png_info_init @ 96 NONAME
+	png_info_init_3 @ 97 NONAME
+	png_init_io @ 98 NONAME
+	png_libpng_ver @ 99 NONAME DATA 18
+	png_malloc @ 100 NONAME
+	png_malloc_default @ 101 NONAME
+	png_malloc_warn @ 102 NONAME
+	png_memcpy_check @ 103 NONAME
+	png_memset_check @ 104 NONAME
+	png_mmx_support @ 105 NONAME
+	png_oFFs @ 106 NONAME DATA 5
+	png_pCAL @ 107 NONAME DATA 5
+	png_pHYs @ 108 NONAME DATA 5
+	png_pass_dsp_mask @ 109 NONAME DATA 28
+	png_pass_inc @ 110 NONAME DATA 28
+	png_pass_mask @ 111 NONAME DATA 28
+	png_pass_start @ 112 NONAME DATA 28
+	png_pass_yinc @ 113 NONAME DATA 28
+	png_pass_ystart @ 114 NONAME DATA 28
+	png_permit_empty_plte @ 115 NONAME
+	png_permit_mng_features @ 116 NONAME
+	png_process_data @ 117 NONAME
+	png_progressive_combine_row @ 118 NONAME
+	png_read_end @ 119 NONAME
+	png_read_image @ 120 NONAME
+	png_read_info @ 121 NONAME
+	png_read_init @ 122 NONAME
+	png_read_init_2 @ 123 NONAME
+	png_read_init_3 @ 124 NONAME
+	png_read_png @ 125 NONAME
+	png_read_row @ 126 NONAME
+	png_read_rows @ 127 NONAME
+	png_read_update_info @ 128 NONAME
+	png_reset_zstream @ 129 NONAME
+	png_sBIT @ 130 NONAME DATA 5
+	png_sCAL @ 131 NONAME DATA 5
+	png_sPLT @ 132 NONAME DATA 5
+	png_sRGB @ 133 NONAME DATA 5
+	png_save_int_32 @ 134 NONAME
+	png_save_uint_16 @ 135 NONAME
+	png_save_uint_32 @ 136 NONAME
+	png_set_IHDR @ 137 NONAME
+	png_set_PLTE @ 138 NONAME
+	png_set_add_alpha @ 139 NONAME
+	png_set_asm_flags @ 140 NONAME
+	png_set_bKGD @ 141 NONAME
+	png_set_background @ 142 NONAME
+	png_set_bgr @ 143 NONAME
+	png_set_cHRM @ 144 NONAME
+	png_set_cHRM_fixed @ 145 NONAME
+	png_set_compression_buffer_size @ 146 NONAME
+	png_set_compression_level @ 147 NONAME
+	png_set_compression_mem_level @ 148 NONAME
+	png_set_compression_method @ 149 NONAME
+	png_set_compression_strategy @ 150 NONAME
+	png_set_compression_window_bits @ 151 NONAME
+	png_set_crc_action @ 152 NONAME
+	png_set_dither @ 153 NONAME
+	png_set_error_fn @ 154 NONAME
+	png_set_expand @ 155 NONAME
+	png_set_expand_gray_1_2_4_to_8 @ 156 NONAME
+	png_set_filler @ 157 NONAME
+	png_set_filter @ 158 NONAME
+	png_set_filter_heuristics @ 159 NONAME
+	png_set_flush @ 160 NONAME
+	png_set_gAMA @ 161 NONAME
+	png_set_gAMA_fixed @ 162 NONAME
+	png_set_gamma @ 163 NONAME
+	png_set_gray_1_2_4_to_8 @ 164 NONAME
+	png_set_gray_to_rgb @ 165 NONAME
+	png_set_hIST @ 166 NONAME
+	png_set_iCCP @ 167 NONAME
+	png_set_interlace_handling @ 168 NONAME
+	png_set_invalid @ 169 NONAME
+	png_set_invert_alpha @ 170 NONAME
+	png_set_invert_mono @ 171 NONAME
+	png_set_keep_unknown_chunks @ 172 NONAME
+	png_set_mem_fn @ 173 NONAME
+	png_set_mmx_thresholds @ 174 NONAME
+	png_set_oFFs @ 175 NONAME
+	png_set_pCAL @ 176 NONAME
+	png_set_pHYs @ 177 NONAME
+	png_set_packing @ 178 NONAME
+	png_set_packswap @ 179 NONAME
+	png_set_palette_to_rgb @ 180 NONAME
+	png_set_progressive_read_fn @ 181 NONAME
+	png_set_read_fn @ 182 NONAME
+	png_set_read_status_fn @ 183 NONAME
+	png_set_read_user_chunk_fn @ 184 NONAME
+	png_set_read_user_transform_fn @ 185 NONAME
+	png_set_rgb_to_gray @ 186 NONAME
+	png_set_rgb_to_gray_fixed @ 187 NONAME
+	png_set_rows @ 188 NONAME
+	png_set_sBIT @ 189 NONAME
+	png_set_sCAL @ 190 NONAME
+	png_set_sPLT @ 191 NONAME
+	png_set_sRGB @ 192 NONAME
+	png_set_sRGB_gAMA_and_cHRM @ 193 NONAME
+	png_set_shift @ 194 NONAME
+	png_set_sig_bytes @ 195 NONAME
+	png_set_strip_16 @ 196 NONAME
+	png_set_strip_alpha @ 197 NONAME
+	png_set_strip_error_numbers @ 198 NONAME
+	png_set_swap @ 199 NONAME
+	png_set_swap_alpha @ 200 NONAME
+	png_set_tIME @ 201 NONAME
+	png_set_tRNS @ 202 NONAME
+	png_set_tRNS_to_alpha @ 203 NONAME
+	png_set_text @ 204 NONAME
+	png_set_unknown_chunk_location @ 205 NONAME
+	png_set_unknown_chunks @ 206 NONAME
+	png_set_user_limits @ 207 NONAME
+	png_set_user_transform_info @ 208 NONAME
+	png_set_write_fn @ 209 NONAME
+	png_set_write_status_fn @ 210 NONAME
+	png_set_write_user_transform_fn @ 211 NONAME
+	png_sig @ 212 NONAME DATA 8
+	png_sig_cmp @ 213 NONAME
+	png_start_read_image @ 214 NONAME
+	png_tEXt @ 215 NONAME DATA 5
+	png_tIME @ 216 NONAME DATA 5
+	png_tRNS @ 217 NONAME DATA 5
+	png_warning @ 218 NONAME
+	png_write_chunk @ 219 NONAME
+	png_write_chunk_data @ 220 NONAME
+	png_write_chunk_end @ 221 NONAME
+	png_write_chunk_start @ 222 NONAME
+	png_write_end @ 223 NONAME
+	png_write_flush @ 224 NONAME
+	png_write_image @ 225 NONAME
+	png_write_info @ 226 NONAME
+	png_write_info_before_PLTE @ 227 NONAME
+	png_write_init @ 228 NONAME
+	png_write_init_2 @ 229 NONAME
+	png_write_init_3 @ 230 NONAME
+	png_write_png @ 231 NONAME
+	png_write_row @ 232 NONAME
+	png_write_rows @ 233 NONAME
+	png_zTXt @ 234 NONAME DATA 5
+

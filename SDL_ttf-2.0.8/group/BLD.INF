@@ -1,0 +1,9 @@
+PRJ_PLATFORMS
+
+WINSCW GCCE
+
+PRJ_EXPORTS
+..\SDL_ttf.h				esdl\SDL_ttf.h
+
+PRJ_MMPFILES
+..\group\SDL_TTF.MMP

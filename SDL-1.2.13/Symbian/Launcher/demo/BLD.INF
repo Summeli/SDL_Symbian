@@ -1,0 +1,6 @@
+PRJ_PLATFORMS
+WINS ARMI winscw gcce
+
+PRJ_MMPFILES
+.\SDLDemo_S60v3.mmp
+.\SDLDemo_uiq3.mmp

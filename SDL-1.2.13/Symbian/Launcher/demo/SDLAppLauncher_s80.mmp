@@ -1,0 +1,18 @@
+TARGET SDLAPPLauncher.app
+#include "..\SDLLauncher.hrh"
+TARGETPATH \system\apps\SDLAPPLauncher
+TARGETTYPE APP
+systeminclude \epoc32\include \epoc32\include\libc \epoc32\include\esdl
+userinclude ..
+sourcepath ..
+source SDLAppLauncher.cpp
+
+UID				0x100039ce KSDLAppLauncherUid
+
+LIBRARY cone.lib  EIKCORE.lib 
+LIBRARY euser.lib apparc.lib  
+LIBRARY efsrv.lib  apgrfx.lib
+
+
+SOURCEPATH ..
+RESOURCE SDLAppLauncher.rss

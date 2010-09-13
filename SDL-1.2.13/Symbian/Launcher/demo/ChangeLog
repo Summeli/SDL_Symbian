@@ -1,0 +1,51 @@
+David Olofson - "Parallax Scrolling Example 2"
+
+	+ Created C style "class" tiled_layer_t.
+
+	+ " " in the map == no tile.
+
+	+ Added a third parallax layer with it's own map.
+
+	+ The background got a map.
+
+	+ Removed the confusing initialization of the
+	  destination SDL_Rect size in draw_tile()...
+
+	+ Added vertical scrolling; map size 16x16.
+
+	+ Corrected my bounce code! (Moving back to the
+	  previous position is wrong*. "Mirroring" over
+	  the limit is the correct way. Silly me... :-)
+
+	+ Tweaked the graphics a bit. The planet is now
+	  circular rather than 320x200 ratio compensated.
+
+	+ Rewrote the rendering loop in a (hopefully)
+	  more comprehensible way.
+
+	+ Exit handled more properly.
+
+	+ Command line options added:
+		-f	Fullscreen
+		-d	Double buffer
+		-<n>	Depth = <n> bits
+
+
+Randi J. Relander - "Parallax Scrolling Example"
+
+	+ Added simple 2-layer parallax scrolling with
+	  layer velocities expressed in pixels/sec.
+
+
+David Olofson - "Tiled Map Scrolling Example"
+
+	+ Added a simple map, and replaced the image with
+	  a tile palette. Graphics borrowed from David's
+	  (so far) unreleased game "Project Spitfire".
+
+	+ Fixed atexit() bug.
+
+
+Nghia - "Simple Scrolling Example"
+
+	+ Basic continuous scrolling of an image.
