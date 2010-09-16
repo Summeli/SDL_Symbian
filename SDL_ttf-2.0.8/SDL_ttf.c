@@ -172,7 +172,7 @@ void TTF_ByteSwappedUNICODE(int swapped)
 	TTF_byteswapped = swapped;
 }
 
-static void TTF_SetFTError(const char *msg, FT_Error /*error*/)
+static void TTF_SetFTError(const char *msg, FT_Error error )
 {
 #ifdef USE_FREETYPE_ERRORS
 #undef FTERRORS_H

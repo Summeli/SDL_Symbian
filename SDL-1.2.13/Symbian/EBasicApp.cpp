@@ -1340,7 +1340,7 @@ void CEBasicAppUi::ConstructL()
 #ifdef UIQ3
 	//	SetAutoExitOnAppSwitch(EFalse);
 #endif
-	BaseConstructL();	
+	BaseConstructL( EAppOrientationLandscape );	
 #else //!EPOC_AS_APP
 	BaseConstructL(ENoAppResourceFile);	
 #endif //EPOC_AS_APP
