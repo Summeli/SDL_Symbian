@@ -1260,7 +1260,19 @@ void CEBasicAppUi::SetExecutablePathL()
 #ifdef UIQ3
 	iExecutablePath.Append(_L("C:\\Shared\\"));
 #else
-	iExecutablePath.Append(_L("C:\\Data\\"));
+	//iExecutablePath.Append(_L("C:\\Data\\"));
+	TFileName appname = CEikonEnv::Static()->EikAppUi()->Application()->AppFullName();
+	TParse parse;
+	//On WINS the application is on the z drive
+	#ifdef __WINS__
+	   parse.Set(_L("c:"), &appname, NULL);
+	#else
+	   parse.Set( appname, NULL, NULL);
+	#endif
+	TFileName drive;   // contains application's path
+	drive = parse.Drive();
+	iExecutablePath.Append( drive );
+	iExecutablePath.Append(_L("\\Data\\"));
 #endif	
 	TBuf<64> dataFolder = KNullDesC();
 	static_cast<CSDLApp*>(Application())->GetDataFolder(dataFolder);
@@ -1303,7 +1315,19 @@ void CEBasicAppUi::SetExecutablePathL()
 #ifdef UIQ3
 	fname = _L("C:\\Shared\\");
 #else
-	fname = _L("C:\\Data\\");
+	//fname = _L("C:\\Data\\");
+	TFileName appname = CEikonEnv::Static()->EikAppUi()->Application()->AppFullName();
+	TParse parse;
+	//On WINS the application is on the z drive
+	#ifdef __WINS__
+	   parse.Set(_L("c:"), &appname, NULL);
+	#else
+	   parse.Set( appname, NULL, NULL);
+	#endif
+	TFileName drive;   // contains application's path
+	drive = parse.Drive();
+	fname.Append( drive );
+	fname.Append(_L("\\Data\\"));
 #endif	
 	TBuf<64> dataFolder = KNullDesC();
 	static_cast<CSDLApp*>(Application())->GetDataFolder(dataFolder);
